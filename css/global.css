@@ -127,7 +127,6 @@ nav a {
 		text-decoration: none;
 		font-size: 0.9rem;
 		display: block;
-		color: #000;
 		font-family: "Work Sans";
 		font-style: normal;
 		font-weight: 400;
@@ -136,6 +135,7 @@ nav a {
 
 	.topnavmobile #myLinks {
 		display: none;
+		background-color: #eaeef1;
 	}
 	.topnavmobile a.icon {
 		background: rgba(0, 0, 0, 0);
@@ -148,11 +148,11 @@ nav a {
 	.topnavmobile .active {
 		color: #000;
 		font-family: "Inter";
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 107.292%;
-		letter-spacing: -0.03rem;
+		letter-spacing: -0.06rem;
 		text-transform: lowercase;
 		padding-left: 30px;
 	}
