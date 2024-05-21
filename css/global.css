@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html { font-size: 16px; }
+
+body {
+    background-color: #FBFAF6;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    max-width: 1600px;
+    margin: auto;
+    
+}
+
+.company-name {
+    color: #000;
+    font-family: "Inter";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 107.292%; 
+    letter-spacing: -0.06rem;
+    text-transform: lowercase;
+
+}
+
+nav a {
+color: #000;
+font-family: "Work Sans";
+font-size: 1.1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 107.292%; 
+letter-spacing: -0.05rem;
+text-decoration: none;
+margin-right: 2.2em;
+}
+
+
+.topnavmobile {
+    display: none;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+
+  .topnavmobile #myLinks {
+    display: none;
+  }
+
+  .footer {                    
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    max-width: 1600px;
+    margin: auto;
+}
+
+
+.footer p {                    
+    color: #ffffff;
+    font-family: "Work Sans";
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.footer h4 {                    
+    color: #ffffff;
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.footer-rækker {
+  margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    font-size: 10px;
+    width: 1200px;
+   
+}
+
+.copyrights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin-left: 10%;
+    padding-bottom: 1%;
+}
+
+
+
+.footer-bg {
+  background-color: #111;
+  max-width: 2544px;
+  margin: auto;
+}
+
+.mobile-only-arrow {
+  display: none;
+}
+
+  @media only screen and (max-width: 1200px)
+
+  {
+    .navbar {
+        display: none;
+    }
+    .topnavmobile {
+        display: block;
+        overflow: hidden;
+        background-color: #FBFAF6;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        margin-left: 20px;
+          }
+      .topnavmobile a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 0.8rem;
+        display: block;
+        color: #000;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .topnavmobile #myLinks {
+        display: none;
+      }
+      .topnavmobile a.icon {
+        background: rgba(0, 0, 0, 0);
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        font-size: 1.5rem;
+        
+      }
+      .topnavmobile .active {
+        color: #000;
+        font-family: "Inter";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 107.292%; 
+        letter-spacing: -0.03rem;
+        text-transform: lowercase;
+      }
+
+      .footer {                    
+        display: flex;
+        flex-direction: column;
+        background-color: #111;
+        max-width: 1600px;
+        margin: auto;
+    }
+    
+    
+    .footer p { 
+      display: none;                   
+        color: #ffffff;
+        font-family: "Work Sans";
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2;
+    }
+    
+    .footer h4 {                    
+        color: #ffffff;
+        font-family: "Work Sans";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2;
+        padding-bottom: 0.2%;
+    }
+    
+    .footer-rækker {
+      margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 3%;
+        gap: 5px;
+        font-size: 10px;
+        width: 1200px;
+        padding: 0% 3%;
+       
+    }
+    
+    .copyrights{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        margin-left: 10%;
+        padding-bottom: 1%;
+    }
+    
+    
+    
+    .footer-bg {
+      background-color: #111;
+      max-width: 2544px;
+      margin: auto;
+    }
+
+    .mobile-only-arrow {
+      display: block;
+    }
+    
+  }
