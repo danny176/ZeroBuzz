@@ -120,13 +120,12 @@ nav a {
 		position: sticky;
 		top: 0;
 		z-index: 1000;
-		margin-left: 20px;
 	}
 	.topnavmobile a {
 		color: black;
 		padding: 14px 16px;
 		text-decoration: none;
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		display: block;
 		color: #000;
 		font-family: "Work Sans";
@@ -155,14 +154,15 @@ nav a {
 		line-height: 107.292%;
 		letter-spacing: -0.03rem;
 		text-transform: lowercase;
+		padding-left: 30px;
 	}
 
 	.footer {
 		display: flex;
 		flex-direction: column;
 		background-color: #111;
-		max-width: 1600px;
-		margin: auto;
+
+		
 	}
 
 	.footer p {
@@ -193,8 +193,8 @@ nav a {
 		margin-bottom: 3%;
 		gap: 5px;
 		font-size: 10px;
-		width: 1200px;
 		padding: 0% 3%;
+		width: 100%;
 	}
 
 	.copyrights {
