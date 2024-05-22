@@ -21,15 +21,10 @@ nav {
 	margin: auto;
 }
 
-.company-name {
-	color: #000;
-	font-family: "Inter";
-	font-size: 1.8rem;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 107.292%;
-	letter-spacing: -0.06rem;
-	text-transform: lowercase;
+.company-name img {
+	display: block;
+	width: 20%;
+	height: auto;
 }
 
 nav a {
@@ -91,12 +86,10 @@ nav a {
 }
 
 .copyrights {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	font-size: 10px;
-	margin-left: 10%;
 	padding-bottom: 1%;
+	width: 1200px;
+	padding-left: 8%;
 }
 
 .footer-bg {
@@ -109,6 +102,7 @@ nav a {
 	display: none;
 }
 
+/* Mobile Header & Footer */
 @media only screen and (max-width: 1200px) {
 	.navbar {
 		display: none;
@@ -145,24 +139,17 @@ nav a {
 		top: 0;
 		font-size: 1.5rem;
 	}
-	.topnavmobile .active {
-		color: #000;
-		font-family: "Inter";
-		font-size: 1.6rem;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 107.292%;
-		letter-spacing: -0.06rem;
-		text-transform: lowercase;
-		padding-left: 30px;
+	.topnavmobile .active img {
+		display: block;
+		width: 124px;
+		height: auto;
+		padding-left: 10px;
 	}
 
 	.footer {
 		display: flex;
 		flex-direction: column;
 		background-color: #111;
-
-		
 	}
 
 	.footer p {

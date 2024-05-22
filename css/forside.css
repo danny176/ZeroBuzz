@@ -40,18 +40,23 @@
 		max-width: 1440px;
 		margin: auto;
 		position: relative;
-		overflow: hidden;
 	}
 
-	.hero-text-button img {
+	.hero-text-button .button-img {
+		display: block;
 		padding: 40px 0px;
-		animation: slideInFromLeft 1s ease-out forwards;
 		opacity: 0;
+		animation: slideInFromLeft 1s ease-out forwards;
 		animation-delay: 0.5s;
+		transition: transform 0.3s ease; /* Smooth zoom effect */
+	}
+
+	.hero-text-button .button-img:hover {
+		transform: scale(1.1); /* Zoom in the image */
 	}
 
 	.hero-text-button {
-		width: 33.3125rem;
+		width: 500px;
 		margin-top: 10%;
 	}
 
@@ -146,7 +151,7 @@
 
 	.product-column h3 {
 		margin-top: -2%;
-		margin-bottom: 3%;
+		margin-bottom: 4%;
 		color: #000;
 		font-family: "Space Grotesk";
 		font-size: 1.5rem;
@@ -167,6 +172,25 @@
 		line-height: 133%; /* 1.33rem */
 		letter-spacing: -0.02rem;
 		text-decoration: none;
+		border-color: #000;
+		position: relative;
+		z-index: 0;
+	}
+
+	.product-column a:hover:before {
+		border-color: #000;
+	}
+
+	.product-column a:before {
+		content: "";
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		bottom: -2px;
+		left: -2px;
+		border: 2px solid transparent;
+		z-index: -1;
+		transition: border-color 0.3s ease;
 	}
 
 	.product-row {
@@ -216,6 +240,7 @@
 		line-height: 133%; /* 1.6625rem */
 		letter-spacing: -0.025rem;
 		padding: 8% 0px;
+		margin-bottom: 4%;
 	}
 
 	.text-container h2 {
@@ -240,6 +265,24 @@
 		line-height: 133%; /* 1.33rem */
 		letter-spacing: -0.02rem;
 		text-decoration: none;
+		position: relative;
+		z-index: 0;
+	}
+
+	.text-container a:before {
+		content: "";
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		bottom: -2px;
+		left: -2px;
+		border: 2px solid transparent;
+		z-index: -1;
+		transition: border-color 0.3s ease;
+	}
+
+	.text-container a:hover:before {
+		border-color: #000;
 	}
 
 	.nyhedsbrev {
@@ -534,8 +577,8 @@
 
 	.hero-text-button img {
 		display: block;
-		padding-top: 8%;
-		width: 70%;
+		padding-top: 10%;
+		width: 20vw;
 		height: auto;
 	}
 
@@ -546,25 +589,25 @@
 		flex-direction: column;
 		padding: 3% 3%;
 		width: 100%;
-		max-width: 300px;
+		max-width: 250px;
 	}
 
 	.hero-section h1 {
 		color: #000;
 		text-align: left;
 		font-family: Inter;
-		font-size: 3.5vw;
+		font-size: 3.8vw;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 108%; /* 43.2px */
 		letter-spacing: -0.8px;
-		max-width: 600px;
+		max-width: 700px;
 	}
 
 	.hero-billede img {
 		display: block;
 		height: auto;
-		width: 90%;
+		width: 99%;
 		max-width: 400px;
 		margin: auto;
 		animation: bounce 2s infinite ease-in-out;
@@ -605,13 +648,13 @@
 
 	.product-column img {
 		display: block;
-		width: 40%;
+		width: 100%;
 		height: auto;
 		max-width: 400px;
 	}
 
 	.product-column h3 {
-		margin-bottom: 2%;
+		margin-bottom: 4%;
 		color: #000;
 		font-family: "Space Grotesk";
 		font-size: 1.5rem;
@@ -637,8 +680,11 @@
 
 	.product-row {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
+		flex-wrap: wrap;
+		width: 75%;
+		margin: auto;
 	}
 
 	.mikrobryggeri-teaser {
@@ -649,9 +695,10 @@
 
 	.mikrobryggeri-teaser img {
 		display: block;
-		width: 100%;
+		width: 90%;
 		height: auto;
 		padding: 6% 3%;
+		margin: auto;
 	}
 
 	.text-container {
