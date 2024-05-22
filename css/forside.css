@@ -1,3 +1,4 @@
+/* Desktop styles */
 @media only screen and (min-width: 1200px) {
 	@keyframes slideInFromLeft {
 		from {
@@ -182,7 +183,23 @@
 		display: flex;
 		justify-content: space-around;
 		margin: auto;
+		margin-top: 5%;
+		opacity: 0;
+		transform: translateY(20px);
+		transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 	}
+
+	/* Fade in effekt */
+	.mikrobryggeri-teaser.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.hidden {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	/* Fade in effekt slut */
 
 	.text-container {
 		margin-top: 5%;
@@ -258,7 +275,28 @@
 	}
 }
 
-@media only screen and (max-width: 1199px) {
+/* Mobile styles */
+@media only screen and (max-width: 599px) {
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-5px);
+		}
+	}
+	@keyframes slideInFromLeft {
+		from {
+			transform: translateX(-100%);
+			opacity: 0;
+		}
+		to {
+			transform: translateX(0);
+			opacity: 1;
+		}
+	}
+
 	.hero-section {
 		display: flex;
 		flex-direction: column-reverse;
@@ -270,8 +308,12 @@
 		display: block;
 		padding-top: 15%;
 		padding-bottom: 15%;
-		width: 90%;
+		width: 80%;
 		height: auto;
+		animation: slideInFromLeft 1s ease-out forwards;
+		opacity: 0;
+		animation-delay: 0.5s;
+		margin: auto;
 	}
 
 	.hero-text-button {
@@ -291,6 +333,9 @@
 		line-height: 108%; /* 43.2px */
 		letter-spacing: -0.8px;
 		max-width: 600px;
+		animation: slideInFromLeft 1s ease-out forwards;
+		opacity: 0;
+		animation-delay: 0.5s;
 	}
 
 	.hero-billede img {
@@ -299,17 +344,19 @@
 		width: 100%;
 		max-width: 400px;
 		margin: auto;
+		animation: bounce 2s infinite ease-in-out;
+		animation-delay: 0.5s;
 	}
 
 	.imprint-promo img {
-		display: block;
+		display: none;
 		width: 100%;
 		padding: 0% 3%;
-		height: auto;
+		padding-bottom: 5%;
 	}
 
 	.text-button-products h2 {
-		padding: 4% 3%;
+		padding: 2% 3%;
 		color: #000;
 		text-align: center;
 		font-family: "Inter";
@@ -318,6 +365,7 @@
 		font-weight: 500;
 		line-height: normal;
 		letter-spacing: -0.48px;
+		margin-bottom: 10%;
 	}
 
 	.text-button-products img {
@@ -334,13 +382,13 @@
 
 	.product-column img {
 		display: block;
-		width: 80%;
+		width: 60%;
 		height: auto;
 		max-width: 400px;
 	}
 
 	.product-column h3 {
-		margin-bottom: 1%;
+		margin-bottom: 3%;
 		color: #000;
 		font-family: "Space Grotesk";
 		font-size: 1.5rem;
@@ -361,6 +409,230 @@
 		line-height: 133%; /* 1.33rem */
 		letter-spacing: -0.02rem;
 		text-decoration: none;
+		margin-bottom: 6%;
+	}
+
+	.product-row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.mikrobryggeri-teaser {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.mikrobryggeri-teaser img {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 8% 3%;
+	}
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 25px;
+	}
+
+	.text-container p {
+		color: #000;
+		text-align: center;
+		font-family: "DM Sans";
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 22.4px */
+		letter-spacing: -0.32px;
+		padding: 1% 6%;
+		max-width: 300px;
+	}
+
+	.text-container h2 {
+		color: #000;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1; /* 0px */
+		letter-spacing: -0.64px;
+		width: 300px;
+	}
+
+	.text-container a {
+		padding: 0.375rem 2rem;
+		border: 1px solid #000;
+		color: #000;
+		font-family: "DM Sans";
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 133%; /* 1.33rem */
+		letter-spacing: -0.02rem;
+		text-decoration: none;
+		margin-bottom: 10%;
+	}
+
+	.nyhedsbrev {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		align-items: center;
+		padding: 8% 5%;
+	}
+
+	.nyhedsbrev img {
+		display: block;
+		width: 80%;
+		height: auto;
+		max-width: 300px;
+	}
+
+	.nyhedsbrev h3 {
+		color: #000;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 136.53%; /* 2.73063rem */
+	}
+
+	.nyhedsbrev h4 {
+		color: #000;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 0.8rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 136.53%; /* 1.36531rem */
+	}
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-5px);
+		}
+	}
+	.hero-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		padding: 2% 10%;
+	}
+
+	.hero-text-button img {
+		display: block;
+		padding-top: 8%;
+		width: 70%;
+		height: auto;
+	}
+
+	.hero-text-button {
+		margin-top: 10%;
+		display: flex;
+		align-items: left;
+		flex-direction: column;
+		padding: 3% 3%;
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.hero-section h1 {
+		color: #000;
+		text-align: left;
+		font-family: Inter;
+		font-size: 3.5vw;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 108%; /* 43.2px */
+		letter-spacing: -0.8px;
+		max-width: 600px;
+	}
+
+	.hero-billede img {
+		display: block;
+		height: auto;
+		width: 90%;
+		max-width: 400px;
+		margin: auto;
+		animation: bounce 2s infinite ease-in-out;
+		animation-delay: 0.5s;
+	}
+
+	.imprint-promo img {
+		display: block;
+		width: 100%;
+		padding: 0% 3%;
+		padding-bottom: 5%;
+		height: auto;
+	}
+
+	.text-button-products h2 {
+		padding: 4% 3%;
+		color: #000;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: -0.48px;
+	}
+
+	.text-button-products img {
+		display: none;
+		width: 4.9375rem;
+		height: 2.375rem;
+	}
+
+	.product-column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.product-column img {
+		display: block;
+		width: 40%;
+		height: auto;
+		max-width: 400px;
+	}
+
+	.product-column h3 {
+		margin-bottom: 2%;
+		color: #000;
+		font-family: "Space Grotesk";
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.075rem;
+	}
+
+	.product-column a {
+		padding: 0.375rem 1rem;
+		border: 1px solid #000;
+		color: #000;
+		font-family: "DM Sans";
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 133%; /* 1.33rem */
+		letter-spacing: -0.02rem;
+		text-decoration: none;
+		margin-bottom: 3%;
 	}
 
 	.product-row {
@@ -438,7 +710,7 @@
 
 	.nyhedsbrev img {
 		display: block;
-		width: 80%;
+		width: 100%;
 		height: auto;
 		max-width: 300px;
 	}
@@ -447,7 +719,7 @@
 		color: #000;
 		text-align: center;
 		font-family: "Inter";
-		font-size: 1rem;
+		font-size: 1.5rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 136.53%; /* 2.73063rem */
@@ -457,11 +729,9 @@
 		color: #000;
 		text-align: center;
 		font-family: "Inter";
-		font-size: 0.8rem;
+		font-size: 1rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 136.53%; /* 1.36531rem */
 	}
 }
-
-
