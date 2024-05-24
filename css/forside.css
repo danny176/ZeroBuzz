@@ -30,6 +30,8 @@
 		50% {
 			transform: translateY(-20px);
 		}
+
+		
 	}
 
 	.hero-section {
@@ -44,15 +46,21 @@
 
 	.hero-text-button .button-img {
 		display: block;
-		padding: 40px 0px;
+		margin-top: 10%;
 		opacity: 0;
 		animation: slideInFromLeft 1s ease-out forwards;
 		animation-delay: 0.5s;
-		transition: transform 0.3s ease; /* Smooth zoom effect */
 	}
 
-	.hero-text-button .button-img:hover {
-		transform: scale(1.1); /* Zoom in the image */
+	
+	.button-img {
+		content: url("/images/hero-knap.svg");
+		transition: opacity 0.5s ease;
+	}
+
+	.button-img:hover {
+		content: url("/images/knap-variant.svg");
+		opacity: 0;
 	}
 
 	.hero-text-button {

@@ -1,12 +1,19 @@
 //Mobile navigation//
 function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+  var links = document.getElementById("myLinks");
+  var icon = document.querySelector(".icon");
+
+  // Open class icon
+  icon.classList.toggle("open");
+
+  // Vis links
+  if (links.style.display === "block") {
+    links.style.display = "none";
+  } else {
+    links.style.display = "block";
   }
+}
+
   //Mikrobryggeri teaser in viewport fadein//
   document.addEventListener('DOMContentLoaded', (event) => {
     const teaser = document.querySelector('.mikrobryggeri-teaser');
