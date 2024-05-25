@@ -1,16 +1,13 @@
 //Mobile navigation//
 function myFunction() {
-  var links = document.getElementById("myLinks");
-  var icon = document.querySelector(".icon");
-
-  // Open class icon
-  icon.classList.toggle("open");
-
-  // Vis links
-  if (links.style.display === "block") {
-    links.style.display = "none";
+  var x = document.getElementById("myLinks");
+  var topnav = document.querySelector('.topnavmobile');
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    topnav.classList.remove('open');
   } else {
-    links.style.display = "block";
+    x.style.display = "block";
+    topnav.classList.add('open');
   }
 }
 
@@ -23,4 +20,21 @@ function myFunction() {
             teaser.classList.add('visible');
         }
     });
+});
+
+  //Vision fade in//
+  document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1 // Adjust this value as needed
+    });
+
+    const section = document.querySelector('.image-text-container-vision');
+    observer.observe(section);
 });

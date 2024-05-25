@@ -1,0 +1,340 @@
+body {
+	background-image: url(/images/vision-hero.png);
+	background-position: center;
+	background-size: cover;
+	height: 70vh;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1200px) {
+	.hero-section-vision h1 {
+		color: #fff;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 5rem;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 110%; /* 5.5rem */
+		letter-spacing: -0.1rem;
+	}
+
+	.headline-hero-container {
+		display: flex;
+		justify-content: center;
+		height: 55vh;
+		align-items: flex-end;
+	}
+
+	.text-container {
+		margin-top: 100px;
+		padding-right: 5%;
+	}
+
+	.text-container h2 {
+		color: #000;
+		font-family: "Inter";
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 108.425%; /* 3.25275rem */
+		letter-spacing: -0.06rem;
+		margin-bottom: 10%;
+		width: 22.3125rem;
+	}
+
+	.text-container p {
+		color: #000;
+		font-family: "DM Sans";
+		font-size: 1.25rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 135%; /* 1.6875rem */
+		letter-spacing: 0.0125rem;
+		width: 19rem;
+	}
+
+	.image-text-container-vision img {
+		width: 41.75rem;
+		height: 45.6875rem;
+	}
+
+	.image-text-container-vision {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		padding: 8% 5%;
+		max-width: 1600px;
+		margin: auto;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+
+	/* Fade in effekt */
+	.image-text-container-vision {
+		opacity: 0;
+		transition: opacity 1s ease-in-out;
+	}
+
+	.image-text-container-vision.visible {
+		opacity: 1;
+	}
+	/* Fade in effekt slut */
+
+	.vision-hangover-desktop {
+		display: block;
+		width: 100%;
+		padding: 0% 0%;
+	}
+
+	.vision-message h1 {
+		color: #fff;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 135%; /* 2.7rem */
+		letter-spacing: -0.04rem;
+		width: 30rem;
+		margin: auto;
+		padding: 8% 0px;
+	}
+
+	.vision-message {
+		align-items: center;
+		background-color: #111;
+		padding-bottom: 5%;
+	}
+
+	.vision-hangover-mobile {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+	.hero-section-vision h1 {
+		color: #fff;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 4.5rem;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 110%; /* 5.5rem */
+		letter-spacing: -0.1rem;
+	}
+
+	.headline-hero-container {
+		display: flex;
+		justify-content: center;
+		height: 50vh;
+		align-items: flex-end;
+		position: relative;
+		z-index: 9999;
+	}
+
+	.text-container {
+		margin-top: 25%;
+	}
+
+	.text-container h2 {
+		color: #000;
+		font-family: "Inter";
+		text-align: center;
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 108.425%; /* 3.25275rem */
+		letter-spacing: -0.06rem;
+		width: 22.3125rem;
+		margin: auto;
+	}
+
+	.text-container p {
+		color: #000;
+		font-family: "DM Sans";
+		text-align: center;
+		font-size: 1.25rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 135%; /* 1.6875rem */
+		letter-spacing: 0.0125rem;
+		width: 25rem;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+	.image-text-container-vision img {
+		width: 35rem;
+		height: 40rem;
+		margin-bottom: 5%;
+	}
+
+	.image-text-container-vision {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 1600px;
+		margin: auto;
+		margin-top: 3%;
+		margin-bottom: 1%;
+	}
+
+	/* Fade in effekt */
+	.image-text-container-vision {
+		opacity: 0;
+		transition: opacity 1s ease-in-out;
+	}
+
+	.image-text-container-vision.visible {
+		opacity: 1;
+	}
+	/* Fade in effekt slut */
+
+	.vision-hangover-desktop {
+		display: block;
+		width: 100%;
+		padding: 10% 5%;
+	}
+
+	.vision-message h1 {
+		color: #fff;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 135%; /* 2.7rem */
+		letter-spacing: -0.04rem;
+		width: 20rem;
+		margin: auto;
+		padding: 8% 0px;
+	}
+
+	.vision-message {
+		align-items: center;
+		background-color: #111;
+		padding-bottom: 5%;
+	}
+
+	.vision-hangover-mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 599px) {
+	.hero-section-vision h1 {
+		padding-top: 80%;
+		color: #fff;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 110%; /* 5.5rem */
+		letter-spacing: -0.1rem;
+	}
+
+	.text-container {
+		margin-top: 50%;
+	}
+
+	.headline-hero-container {
+		display: flex;
+		justify-content: center;
+		height: 42vh;
+		align-items: flex-end;
+		position: relative;
+		z-index: 1;
+	}
+
+	.text-container h2 {
+		color: #000;
+		font-family: "Inter";
+		text-align: center;
+		font-size: 3rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 108.425%; /* 3.25275rem */
+		letter-spacing: -0.06rem;
+		width: 22.3125rem;
+		margin: auto;
+	}
+
+	.text-container p {
+		color: #000;
+		font-family: "DM Sans";
+		text-align: center;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 135%; /* 1.6875rem */
+		letter-spacing: 0.0125rem;
+		width: 20rem;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		margin: auto;
+		padding: 8% 0px;
+	}
+
+	.image-text-container-vision img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 5%;
+		padding: 0px 5%;
+	}
+
+	.image-text-container-vision {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 1600px;
+		margin: auto;
+		margin-top: 3%;
+	}
+
+	/* Fade in effekt */
+	.image-text-container-vision {
+		opacity: 0;
+		transition: opacity 1s ease-in-out;
+	}
+
+	.image-text-container-vision.visible {
+		opacity: 1;
+	}
+	/* Fade in effekt slut */
+
+	.vision-hangover-mobile {
+		display: block;
+		width: 100%;
+		padding: 15% 5%;
+	}
+
+	.vision-message h1 {
+		color: #fff;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 135%; /* 2.7rem */
+		letter-spacing: -0.04rem;
+		width: 20rem;
+		margin: auto;
+		padding: 8% 0px;
+	}
+
+	.vision-message {
+		align-items: center;
+		background-color: #111;
+		padding-bottom: 5%;
+	}
+
+	.vision-hangover-desktop {
+		display: none;
+	}
+}
