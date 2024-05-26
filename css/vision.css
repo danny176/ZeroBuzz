@@ -1,14 +1,26 @@
-body {
-	background-image: url(/images/vision-hero.png);
-	background-position: center;
-	background-size: cover;
-	height: 70vh;
-	width: 100%;
-	background-repeat: no-repeat;
-}
-
 @media only screen and (min-width: 1200px) {
-	.hero-section-vision h1 {
+		.hero {
+			background-image: url("/images/vision-hero.png");
+			background-size: cover;
+			background-position: center;
+			height: 75vh;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+		
+		.hero-content {
+			text-align: center;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		
+	
+	.hero h1 {
 		color: #fff;
 		text-align: center;
 		font-family: "Inter";
@@ -17,13 +29,7 @@ body {
 		font-weight: 800;
 		line-height: 110%; /* 5.5rem */
 		letter-spacing: -0.1rem;
-	}
-
-	.headline-hero-container {
-		display: flex;
-		justify-content: center;
-		height: 55vh;
-		align-items: flex-end;
+		padding-bottom: 5%;
 	}
 
 	.text-container {
@@ -32,7 +38,7 @@ body {
 	}
 
 	.text-container h2 {
-		color: #000;
+		color: #101010;
 		font-family: "Inter";
 		font-size: 3rem;
 		font-style: normal;
@@ -44,7 +50,7 @@ body {
 	}
 
 	.text-container p {
-		color: #000;
+		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1.25rem;
 		font-style: normal;
@@ -60,14 +66,15 @@ body {
 	}
 
 	.image-text-container-vision {
+		margin-top: 70vh;
 		display: flex;
 		justify-content: space-evenly;
 		width: 100%;
 		padding: 8% 5%;
 		max-width: 1600px;
-		margin: auto;
-		margin-top: 3%;
-		margin-bottom: 3%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	/* Fade in effekt */
@@ -81,22 +88,66 @@ body {
 	}
 	/* Fade in effekt slut */
 
-	.vision-hangover-desktop {
-		display: block;
+	.vision-hangover {
+		position: relative;
+		background: url(/images/vision-hangover.png);
+		background-position: center;
+		background-size: cover;
 		width: 100%;
-		padding: 0% 0%;
+		height: 100vh	
+	}
+
+
+.text-overlay-hangover {
+
+}
+
+.text-overlay-hangover-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 55vh;
+}
+	
+	.vision-hangover h1 {
+		color: #FFF;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 4rem;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 135%; /* 5.4rem */
+		letter-spacing: -0.08rem;
+		text-transform: uppercase;
+		width: 750px;
+		padding-bottom: 50px;
+	}
+
+	.vision-hangover p {
+		color: #FFF;
+		text-align: center;
+		font-family: "DM Sans";
+		align-items: center;
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 2.1rem */
+		letter-spacing: -0.03rem;
+		width: 48.6875rem;
+
 	}
 
 	.vision-message h1 {
 		color: #fff;
 		text-align: center;
 		font-family: "Inter";
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 135%; /* 2.7rem */
 		letter-spacing: -0.04rem;
-		width: 30rem;
+		width: 32rem;
 		margin: auto;
 		padding: 8% 0px;
 	}
@@ -113,32 +164,45 @@ body {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-	.hero-section-vision h1 {
-		color: #fff;
-		text-align: center;
-		font-family: "Inter";
-		font-size: 4.5rem;
-		font-style: normal;
-		font-weight: 800;
-		line-height: 110%; /* 5.5rem */
-		letter-spacing: -0.1rem;
-	}
-
-	.headline-hero-container {
+	.hero {
+		background-image: url("/images/vision-hero.png");
+		background-size: cover;
+		background-position: center;
+		height: 75vh;
 		display: flex;
 		justify-content: center;
-		height: 50vh;
 		align-items: flex-end;
-		position: relative;
-		z-index: 9999;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
 	}
+	
+	.hero-content {
+		text-align: center;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	
+
+.hero h1 {
+	color: #fff;
+	text-align: center;
+	font-family: "Inter";
+	font-size: 5rem;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 110%; /* 5.5rem */
+	letter-spacing: -0.1rem;
+	padding-bottom: 5%;
+}
 
 	.text-container {
-		margin-top: 25%;
+		margin-top: 70vh;
 	}
 
 	.text-container h2 {
-		color: #000;
+		color: #101010;
 		font-family: "Inter";
 		text-align: center;
 		font-size: 3rem;
@@ -151,7 +215,7 @@ body {
 	}
 
 	.text-container p {
-		color: #000;
+		color: #101010;
 		font-family: "DM Sans";
 		text-align: center;
 		font-size: 1.25rem;
@@ -193,65 +257,110 @@ body {
 	}
 	/* Fade in effekt slut */
 
-	.vision-hangover-desktop {
-		display: block;
+	.vision-hangover {
+		position: relative;
+		background: url(/images/vision-hangover.png);
+		background-position: center;
+		background-size: cover;
 		width: 100%;
-		padding: 10% 5%;
+		height: 60vh	
 	}
 
-	.vision-message h1 {
-		color: #fff;
+.text-overlay-hangover-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 32vh;
+}
+	
+	.vision-hangover h1 {
+		color: #FFF;
 		text-align: center;
 		font-family: "Inter";
-		font-size: 1.5rem;
+		font-size: 3rem;
 		font-style: normal;
-		font-weight: 600;
-		line-height: 135%; /* 2.7rem */
-		letter-spacing: -0.04rem;
-		width: 20rem;
-		margin: auto;
-		padding: 8% 0px;
+		font-weight: 800;
+		line-height: 135%; /* 5.4rem */
+		letter-spacing: -0.08rem;
+		text-transform: uppercase;
+		width: 750px;
+		padding-bottom: 50px;
+	}
+
+	.vision-hangover p {
+		color: #FFF;
+		text-align: center;
+		font-family: "DM Sans";
+		align-items: center;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 2.1rem */
+		letter-spacing: -0.03rem;
+		width: 35.6875rem;
+
 	}
 
 	.vision-message {
 		align-items: center;
 		background-color: #111;
 		padding-bottom: 5%;
+		padding-top: 8%;
 	}
 
-	.vision-hangover-mobile {
-		display: none;
+	.vision-message h1 {
+		color: #FFF;
+		text-align: center;
+		font-family: Inter;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 135%; /* 2.7rem */
+		letter-spacing: -0.04rem;
+		width: 500px;
+		margin: auto;
 	}
+
+
 }
 
 @media only screen and (max-width: 599px) {
-	.hero-section-vision h1 {
-		padding-top: 80%;
-		color: #fff;
-		text-align: center;
-		font-family: "Inter";
-		font-size: 3rem;
-		font-style: normal;
-		font-weight: 800;
-		line-height: 110%; /* 5.5rem */
-		letter-spacing: -0.1rem;
-	}
-
-	.text-container {
-		margin-top: 50%;
-	}
-
-	.headline-hero-container {
+	.hero {
+		background-image: url("/images/vision-hero.png");
+		background-size: cover;
+		background-position: center;
+		height: 75vh;
 		display: flex;
 		justify-content: center;
-		height: 42vh;
 		align-items: flex-end;
-		position: relative;
-		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
 	}
+	
+	.hero-content {
+		text-align: center;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	
+
+.hero h1 {
+	color: #fff;
+	text-align: center;
+	font-family: "Inter";
+	font-size: 5rem;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 110%; /* 5.5rem */
+	letter-spacing: -0.1rem;
+	padding-bottom: 5%;
+}
 
 	.text-container h2 {
-		color: #000;
+		color: #101010;
 		font-family: "Inter";
 		text-align: center;
 		font-size: 3rem;
@@ -264,7 +373,7 @@ body {
 	}
 
 	.text-container p {
-		color: #000;
+		color: #101010;
 		font-family: "DM Sans";
 		text-align: center;
 		font-size: 1rem;
@@ -294,7 +403,8 @@ body {
 		width: 100%;
 		max-width: 1600px;
 		margin: auto;
-		margin-top: 3%;
+		margin-top: 72vh;
+		padding-bottom: 50px;
 	}
 
 	/* Fade in effekt */
@@ -308,10 +418,49 @@ body {
 	}
 	/* Fade in effekt slut */
 
-	.vision-hangover-mobile {
-		display: block;
+	.vision-hangover {
+		position: relative;
+		background: url(/images/vision-hangover.png);
+		background-position: center;
+		background-size: cover;
 		width: 100%;
-		padding: 15% 5%;
+		height: 60vh	
+	}
+
+.text-overlay-hangover-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 8vh;
+}
+	
+	.vision-hangover h1 {
+		color: #FFF;
+		text-align: center;
+		font-family: "Inter";
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 135%; /* 5.4rem */
+		letter-spacing: -0.08rem;
+		text-transform: uppercase;
+		width: 300px;
+		padding-bottom: 50px;
+	}
+
+	.vision-hangover p {
+		color: #FFF;
+		text-align: center;
+		font-family: "DM Sans";
+		align-items: center;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 2.1rem */
+		letter-spacing: -0.03rem;
+		width: 20.6875rem;
+
 	}
 
 	.vision-message h1 {

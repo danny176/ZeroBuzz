@@ -55,12 +55,12 @@
 	
 	.button-img {
 		content: url("/images/hero-knap.svg");
-		transition: opacity 0.5s ease;
+		
 	}
 
 	.button-img:hover {
 		content: url("/images/knap-variant.svg");
-		opacity: 0;
+		
 	}
 
 	.hero-text-button {
@@ -69,7 +69,7 @@
 	}
 
 	.hero-section h1 {
-		color: #000;
+		color: #101010;
 		font-family: "Inter";
 		font-size: 4.375rem;
 		font-style: normal;
@@ -136,7 +136,7 @@
 	}
 
 	.text-button-products h2 {
-		color: #000;
+		color: #101010;
 		font-family: "Inter";
 		font-size: 3rem;
 		font-style: normal;
@@ -160,7 +160,7 @@
 	.product-column h3 {
 		margin-top: -2%;
 		margin-bottom: 4%;
-		color: #000;
+		color: #101010;
 		font-family: "Space Grotesk";
 		font-size: 1.5rem;
 		font-style: normal;
@@ -171,8 +171,8 @@
 
 	.product-column a {
 		padding: 0.375rem 1rem;
-		border: 1px solid #000;
-		color: #000;
+		border: 1px solid #101010;
+		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1rem;
 		font-style: normal;
@@ -180,13 +180,13 @@
 		line-height: 133%; /* 1.33rem */
 		letter-spacing: -0.02rem;
 		text-decoration: none;
-		border-color: #000;
+		border-color: #101010;
 		position: relative;
 		z-index: 0;
 	}
 
 	.product-column a:hover:before {
-		border-color: #000;
+		border-color: #101010;
 	}
 
 	.product-column a:before {
@@ -240,7 +240,7 @@
 
 	.text-container p {
 		width: 19.3125rem;
-		color: #000;
+		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1.25rem;
 		font-style: normal;
@@ -252,7 +252,7 @@
 	}
 
 	.text-container h2 {
-		color: #000;
+		color: #101010;
 		font-family: "Inter";
 		font-size: 3rem;
 		font-style: normal;
@@ -264,8 +264,8 @@
 
 	.text-container a {
 		padding: 0.375rem 2rem;
-		border: 1px solid #000;
-		color: #000;
+		border: 1px solid #101010;
+		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1rem;
 		font-style: normal;
@@ -290,7 +290,7 @@
 	}
 
 	.text-container a:hover:before {
-		border-color: #000;
+		border-color: #101010;
 	}
 
 	.nyhedsbrev {
@@ -306,7 +306,7 @@
 	}
 
 	.nyhedsbrev h3 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 2rem;
@@ -316,7 +316,7 @@
 	}
 
 	.nyhedsbrev h4 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 1rem;
@@ -328,25 +328,6 @@
 
 /* Mobile styles */
 @media only screen and (max-width: 599px) {
-	@keyframes bounce {
-		0%,
-		100% {
-			transform: translateY(0);
-		}
-		50% {
-			transform: translateY(-5px);
-		}
-	}
-	@keyframes slideInFromLeft {
-		from {
-			transform: translateX(-100%);
-			opacity: 0;
-		}
-		to {
-			transform: translateX(0);
-			opacity: 1;
-		}
-	}
 
 	.hero-section {
 		display: flex;
@@ -361,8 +342,6 @@
 		padding-bottom: 15%;
 		width: 80%;
 		height: auto;
-		animation: slideInFromLeft 1s ease-out forwards;
-		opacity: 0;
 		animation-delay: 0.5s;
 		margin: auto;
 	}
@@ -375,7 +354,7 @@
 	}
 
 	.hero-section h1 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: Inter;
 		font-size: 40px;
@@ -384,9 +363,6 @@
 		line-height: 108%; /* 43.2px */
 		letter-spacing: -0.8px;
 		max-width: 600px;
-		animation: slideInFromLeft 1s ease-out forwards;
-		opacity: 0;
-		animation-delay: 0.5s;
 	}
 
 	.hero-billede img {
@@ -395,8 +371,6 @@
 		width: 100%;
 		max-width: 400px;
 		margin: auto;
-		animation: bounce 2s infinite ease-in-out;
-		animation-delay: 0.5s;
 	}
 
 	.imprint-promo img {
@@ -408,7 +382,7 @@
 
 	.text-button-products h2 {
 		padding: 2% 3%;
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 30px;
@@ -440,7 +414,7 @@
 
 	.product-column h3 {
 		margin-bottom: 3%;
-		color: #000;
+		color: #101010;
 		font-family: "Space Grotesk";
 		font-size: 1.5rem;
 		font-style: normal;
@@ -451,8 +425,8 @@
 
 	.product-column a {
 		padding: 0.375rem 1rem;
-		border: 1px solid #000;
-		color: #000;
+		border: 1px solid #101010;
+		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1rem;
 		font-style: normal;
@@ -491,7 +465,7 @@
 	}
 
 	.text-container p {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "DM Sans";
 		font-size: 16px;
@@ -504,7 +478,7 @@
 	}
 
 	.text-container h2 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 32px;
@@ -517,8 +491,8 @@
 
 	.text-container a {
 		padding: 0.375rem 2rem;
-		border: 1px solid #000;
-		color: #000;
+		border: 1px solid #101010;
+		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1rem;
 		font-style: normal;
@@ -545,7 +519,7 @@
 	}
 
 	.nyhedsbrev h3 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 1rem;
@@ -555,7 +529,7 @@
 	}
 
 	.nyhedsbrev h4 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 0.8rem;
@@ -567,15 +541,6 @@
 
 /* Tablet styles */
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-	@keyframes bounce {
-		0%,
-		100% {
-			transform: translateY(0);
-		}
-		50% {
-			transform: translateY(-5px);
-		}
-	}
 	.hero-section {
 		display: flex;
 		flex-direction: row;
@@ -597,11 +562,11 @@
 		flex-direction: column;
 		padding: 3% 3%;
 		width: 100%;
-		max-width: 250px;
+		max-width: 280px;
 	}
 
 	.hero-section h1 {
-		color: #000;
+		color: #101010;
 		text-align: left;
 		font-family: Inter;
 		font-size: 3.8vw;
@@ -632,7 +597,7 @@
 
 	.text-button-products h2 {
 		padding: 4% 3%;
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 36px;
@@ -663,7 +628,7 @@
 
 	.product-column h3 {
 		margin-bottom: 4%;
-		color: #000;
+		color: #101010;
 		font-family: "Space Grotesk";
 		font-size: 1.5rem;
 		font-style: normal;
@@ -674,8 +639,8 @@
 
 	.product-column a {
 		padding: 0.375rem 1rem;
-		border: 1px solid #000;
-		color: #000;
+		border: 1px solid #101010;
+		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1rem;
 		font-style: normal;
@@ -718,7 +683,7 @@
 	}
 
 	.text-container p {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "DM Sans";
 		font-size: 16px;
@@ -731,7 +696,7 @@
 	}
 
 	.text-container h2 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 32px;
@@ -744,8 +709,8 @@
 
 	.text-container a {
 		padding: 0.375rem 2rem;
-		border: 1px solid #000;
-		color: #000;
+		border: 1px solid #101010;
+		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1rem;
 		font-style: normal;
@@ -771,7 +736,7 @@
 	}
 
 	.nyhedsbrev h3 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 1.5rem;
@@ -781,7 +746,7 @@
 	}
 
 	.nyhedsbrev h4 {
-		color: #000;
+		color: #101010;
 		text-align: center;
 		font-family: "Inter";
 		font-size: 1rem;
