@@ -1,16 +1,13 @@
 //Mobile navigation//
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  var topnav = document.querySelector('.hamburger');
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    topnav.classList.remove('open');
-  } else {
-    x.style.display = "block";
-    topnav.classList.add('open');
-  }
-}
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
 
   //Mikrobryggeri teaser in viewport fadein//
