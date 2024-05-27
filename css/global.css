@@ -88,6 +88,10 @@ nav {
 	padding-top: 30px;
 }
 
+.footer a {
+text-decoration: none;
+}
+
 .footer p {
 	color: #ffffff;
 	font-family: "Work Sans";
