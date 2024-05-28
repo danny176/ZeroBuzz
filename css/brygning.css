@@ -31,11 +31,11 @@
     letter-spacing: -0.04rem;
 	width: 49rem;
 	align-items: center;
-    margin-top: 70vh;
+    margin-top: 75vh;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: 5%;
+    padding-bottom: 150px;
 }
 
 .intro-text h1 {
@@ -46,7 +46,7 @@
 .essence-mock-up img {
     display: block;
     height: auto;
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-bottom: 5%;
 
@@ -74,12 +74,11 @@
 	display: flex;
 	justify-content: space-evenly;
 	padding: 0px 4%;
-	margin-bottom: 10%;
+	margin-bottom: 150px;
     max-width: 1600px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    padding-bottom: 2%;
 }
 
 .article-picture h2 {
