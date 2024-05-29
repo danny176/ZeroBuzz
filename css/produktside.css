@@ -372,7 +372,7 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 10px;
-		margin-top: 3%;
+		margin-top: 50px;
 		max-width: 100%;
 	}
 
@@ -486,7 +486,7 @@
 	}
 
 	.text-button-products h2 {
-		padding: 4% 3%;
+		padding: 50px 0px;
 		color: #101010;
 		text-align: center;
 		font-family: "Inter";
@@ -496,6 +496,7 @@
 		line-height: normal;
 		letter-spacing: -0.48px;
 		padding-top: 10%;
+		margin: auto;
 	}
 
 	.text-button-products img {
@@ -512,9 +513,10 @@
 
 	.product-column img {
 		display: block;
-		width: 100%;
+		width: 80%;
 		height: auto;
 		max-width: 400px;
+		margin: auto;
 	}
 
 	.product-column h3 {
@@ -539,7 +541,7 @@
 		line-height: 133%; /* 1.33rem */
 		letter-spacing: -0.02rem;
 		text-decoration: none;
-		margin-bottom: 3%;
+		margin-bottom: 50px;
 	}
 
 	.product-row {

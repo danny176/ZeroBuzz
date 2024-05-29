@@ -366,9 +366,10 @@ margin-bottom: 10%;
     .essence-mock-up img {
         display: block;
         height: auto;
-        width: 90%;
+        width: 85%;
         margin: auto;
         margin-bottom: 8%;
+        border-radius: 20px;
     
     }
     
