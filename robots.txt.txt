@@ -1,0 +1,4 @@
+Allow all example:
+User-agent: *
+Disaalow: /
+Sitemap: https://zerobuzzbrewery.danielfrederiksmose.dk/sitemap.xml
