@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1200px) {
 	.hero {
-		background-image: url("/images/vision-hero.png");
+		background-image: url("/images/vision-hero.webp");
 		background-size: cover;
 		background-position: center;
 		height: 75vh;
@@ -89,7 +89,7 @@
 
 	.vision-hangover {
 		position: relative;
-		background: url(/images/vision-hangover.png);
+		background: url(/images/vision-hangover-1.webp);
 		background-position: center;
 		background-size: cover;
 		width: 100%;
@@ -158,7 +158,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
 	.hero {
-		background-image: url("/images/vision-hero.png");
+		background-image: url("/images/vision-hero.webp");
 		background-size: cover;
 		background-position: center;
 		height: 75vh;
@@ -251,7 +251,7 @@
 
 	.vision-hangover {
 		position: relative;
-		background: url(/images/vision-hangover.png);
+		background: url(/images/vision-hangover-1.webp);
 		background-position: center;
 		background-size: cover;
 		width: 100%;
@@ -317,7 +317,7 @@
 
 @media only screen and (max-width: 599px) {
 	.hero {
-		background-image: url("/images/vision-hero.png");
+		background-image: url("/images/vision-hero.webp");
 		background-size: cover;
 		background-position: center;
 		height: 75vh;
@@ -409,7 +409,7 @@
 
 	.vision-hangover {
 		position: relative;
-		background: url(/images/vision-hangover.png);
+		background: url(/images/vision-hangover-1.webp);
 		background-position: center;
 		background-size: cover;
 		width: 100%;

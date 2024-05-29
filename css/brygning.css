@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1200px) {
 .hero {
-	background-image: url("/images/artikel-hero.png");
+	background-image: url("/images/artikel-hero.webp");
 	background-size: cover;
 	background-position: center;
 	height: 75vh;
@@ -18,8 +18,6 @@
 	max-width: 900px;
 	margin: 0 auto;
 }
-
-
 
 .intro-text {
     color: #101010;
@@ -49,7 +47,7 @@
     height: auto;
     width: 80%;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
     border-radius: 20px;
     max-width: 1600px;
 
@@ -129,13 +127,13 @@
     line-height: 220%;
     width: 60rem;
     margin: auto;
-    padding: 50px 0px;
+    padding: 100px 0px;
 }
 
 .closing-text h1 {
 	align-items: center;
     font-weight: 500;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
 }
 
 .closing-text a {
@@ -149,7 +147,7 @@
     line-height: 133%; /* 1.33rem */
     letter-spacing: -0.02rem;
     text-decoration: none;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
     }
     
 
@@ -157,7 +155,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
     .hero {
-	background-image: url("/images/artikel-hero.png");
+	background-image: url("/images/artikel-hero.webp");
 	background-size: cover;
 	background-position: center;
 	height: 71vh;
@@ -206,6 +204,7 @@
     width: 90%;
     margin: auto;
     margin-bottom: 5%;
+    border-radius: 20px;
 
 }
 
@@ -321,7 +320,7 @@ margin-bottom: 10%;
 @media only screen and (max-width: 599px) {
 
     .hero {
-        background-image: url("/images/artikel-hero.png");
+        background-image: url("/images/artikel-hero.webp");
         background-size: cover;
         background-position: center;
         height: 75vh;
