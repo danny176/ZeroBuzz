@@ -24,13 +24,14 @@
 .intro-text {
     color: #101010;
     text-align: center;
-    font-family: Inter;
-    font-size: 1.2rem;
+    font-family: "Inter";
+    font-size: 1.5rem;
     font-style: normal;
-    line-height: 240%; /* 2.7rem */
+    font-weight: 600;
     letter-spacing: -0.04rem;
-	width: 49rem;
-	align-items: center;
+    line-height: 220%;
+    width: 60rem;
+    padding: 50px 0px;
     margin-top: 75vh;
     position: relative;
     left: 50%;
@@ -49,6 +50,8 @@
     width: 80%;
     margin: auto;
     margin-bottom: 5%;
+    border-radius: 20px;
+    max-width: 1600px;
 
 }
 
@@ -86,7 +89,7 @@
     font-family: "Inter";
     font-size: 2.5rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 108.425%; /* 2.71063rem */
     letter-spacing: -0.05rem;
 	width: 400px;
@@ -118,17 +121,15 @@
 .closing-text {
     color: #101010;
     text-align: center;
-    font-family: Inter;
-    font-size: 1.2rem;
+    font-family: "Inter";
+    font-size: 1.5rem;
     font-style: normal;
-    line-height: 240%; /* 2.7rem */
+    font-weight: 600;
     letter-spacing: -0.04rem;
-	width: 49rem;
-	align-items: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-bottom: 5%;
+    line-height: 220%;
+    width: 60rem;
+    margin: auto;
+    padding: 50px 0px;
 }
 
 .closing-text h1 {

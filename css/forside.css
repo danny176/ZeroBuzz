@@ -30,8 +30,6 @@
 		50% {
 			transform: translateY(-20px);
 		}
-
-		
 	}
 
 	.hero-section {
@@ -52,20 +50,17 @@
 		animation-delay: 0.5s;
 	}
 
-	
 	.button-img {
 		content: url("/images/hero-knap.svg");
-		
 	}
 
 	.button-img:hover {
 		content: url("/images/knap-variant.svg");
-		
 	}
 
 	.hero-text-button {
 		width: 500px;
-		margin-top: 10%;
+		margin-top: 100px;
 	}
 
 	.hero-section h1 {
@@ -76,6 +71,20 @@
 		font-weight: 600;
 		line-height: 108%;
 		letter-spacing: -0.2rem;
+		animation: slideInFromLeft 1s ease-out forwards;
+		opacity: 0;
+		animation-delay: 0.5s;
+	}
+
+	.hero-section p {
+		margin-top: 40px;
+		color: #101010;
+		font-family: "DM Sans";
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 135%; /* 1.35rem */
+		letter-spacing: 0.01rem;
 		animation: slideInFromLeft 1s ease-out forwards;
 		opacity: 0;
 		animation-delay: 0.5s;
@@ -128,38 +137,42 @@
 	}
 
 	.text-button-products {
-		display: flex;
-		justify-content: space-between;
-		padding: 2% 4%;
-		max-width: 1440px;
+		max-width: 1600px;
 		margin: auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	.text-button-products h2 {
 		color: #101010;
 		font-family: "Inter";
-		font-size: 3rem;
+		font-size: 2rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
-		letter-spacing: -0.06rem;
-	}
-
-	.text-button-products img {
-		display: block;
-		width: 4.9375rem;
-		height: 2.375rem;
+		letter-spacing: -0.04rem;
+		text-align: center;
 	}
 
 	.product-column {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: 20px;
+	}
+
+	.product-column img {
+		max-width: 350px;
+		height: auto;
+		transition: transform .3s;
+		width: 100%;
+	}
+
+	.product-column img:hover {
+		transform: scale(1.05);
 	}
 
 	.product-column h3 {
-		margin-top: -2%;
-		margin-bottom: 4%;
 		color: #101010;
 		font-family: "Space Grotesk";
 		font-size: 1.5rem;
@@ -170,7 +183,7 @@
 	}
 
 	.product-column a {
-		padding: 0.375rem 1rem;
+		padding: 0.4rem 1.5rem;
 		border: 1px solid #101010;
 		color: #101010;
 		font-family: "DM Sans";
@@ -202,11 +215,11 @@
 	}
 
 	.product-row {
-		max-width: 1920px;
+		max-width: 1600px;
 		display: flex;
-		justify-content: center;
-		padding: 0% 10%;
+		justify-content: space-evenly;
 		margin: auto;
+
 	}
 
 	.mikrobryggeri-teaser {
@@ -328,7 +341,6 @@
 
 /* Mobile styles */
 @media only screen and (max-width: 599px) {
-
 	.hero-section {
 		display: flex;
 		flex-direction: column-reverse;
@@ -340,10 +352,23 @@
 		display: block;
 		padding-top: 15%;
 		padding-bottom: 15%;
-		width: 80%;
+		width: 90%;
 		height: auto;
 		animation-delay: 0.5s;
 		margin: auto;
+	}
+
+	.hero-section p {
+		margin-top: 40px;
+		text-align: center;
+		color: #101010;
+		font-family: "DM Sans";
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 135%; /* 1.35rem */
+		letter-spacing: 0.01rem;
+
 	}
 
 	.hero-text-button {
@@ -362,7 +387,7 @@
 		font-weight: 600;
 		line-height: 108%; /* 43.2px */
 		letter-spacing: -0.8px;
-		max-width: 600px;
+		max-width: 300px;
 	}
 
 	.hero-billede img {
@@ -547,7 +572,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		padding: 2% 10%;
+		padding: 2% 5%;
 	}
 
 	.hero-text-button img {
@@ -557,6 +582,18 @@
 		height: auto;
 	}
 
+	.hero-section p {
+		margin-top: 40px;
+		color: #101010;
+		font-family: "DM Sans";
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 135%; /* 1.35rem */
+		letter-spacing: 0.01rem;
+		max-width: 400px;
+	}
+
 	.hero-text-button {
 		margin-top: 10%;
 		display: flex;
@@ -564,7 +601,7 @@
 		flex-direction: column;
 		padding: 3% 3%;
 		width: 100%;
-		max-width: 280px;
+		max-width: 400px;
 	}
 
 	.hero-section h1 {
@@ -619,6 +656,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding-bottom: 50px;
 	}
 
 	.product-column img {
@@ -670,7 +708,7 @@
 
 	.mikrobryggeri-teaser img {
 		display: block;
-		width: 90%;
+		width: 70%;
 		height: auto;
 		padding: 6% 3%;
 		margin: auto;

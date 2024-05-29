@@ -65,7 +65,7 @@ nav {
 	font-style: normal;
 	font-weight: 500;
 	line-height: 107.292%;
-	letter-spacing: -0.02rem;
+	letter-spacing: -0.01rem;
 	text-decoration: none;
 	display: flex;
 	gap: 25px;
@@ -209,8 +209,8 @@ text-decoration: none;
 		padding: 14px 16px;
 		color: #101010;
 		text-decoration: none;
-		font-size: 1.2rem;
-		font-family: "Poppins";
+		font-size: 1.1rem;
+		font-family: "Work Sans";
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
@@ -278,7 +278,7 @@ text-decoration: none;
 	.socials-footer {
 		justify-content: center; /* Center social icons */
 		gap: 10px; /* Add gap between icons */
-		margin-bottom: 5%;
+		margin-bottom: 20px;
 	}
 
 	.footer-rækker {
