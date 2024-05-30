@@ -54,7 +54,7 @@ nav {
 
 .company-name img {
 	display: block;
-	width: 20%;
+	width: 150px;
 	height: auto;
 }
 
@@ -239,11 +239,16 @@ nav {
 		transform: translateY(-8px) rotate(-45deg);
 	}
 
+	a.active {
+		width: 130px;
+	}
+
 	.topnavmobile .active img {
 		display: block;
 		width: 130px;
 		height: auto;
 		padding-left: 10px;
+		max-width: 130;
 	}
 
 	.footer {
