@@ -106,7 +106,7 @@
 	width: 400px;
 }
 
-#bold-words {
+.bold-words {
     color: #101010;
     font-family: "DM Sans";
     font-size: 0.9rem;
@@ -269,7 +269,7 @@
 	width: 300px;
 }
 
-#bold-words {
+.bold-words {
     color: #101010;
     font-family: "DM Sans";
     font-size: 1rem;
@@ -436,7 +436,7 @@ margin-bottom: 10%;
         width: 300px;
     }
     
-    #bold-words {
+    .bold-words {
         color: #101010;
         font-family: "DM Sans";
         font-size: 1rem;
