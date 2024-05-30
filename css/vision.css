@@ -97,7 +97,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		padding-bottom: 2rem; /* Add some bottom padding if needed */
+		padding-bottom: 2rem;
 	}
 
 	.text-overlay-hangover-container {
@@ -259,7 +259,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		padding-bottom: 2rem; /* Add some bottom padding if needed */
+		padding-bottom: 2rem;
 	}
 
 	.text-overlay-hangover-container {
@@ -417,7 +417,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		padding-bottom: 2rem; /* Add some bottom padding if needed */
+		padding-bottom: 2rem;
 	}
 
 	.vision-hangover h1 {

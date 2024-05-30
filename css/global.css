@@ -89,7 +89,7 @@ nav {
 }
 
 .footer a {
-text-decoration: none;
+	text-decoration: none;
 }
 
 .footer p {
@@ -214,7 +214,7 @@ text-decoration: none;
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
-		z-index: 1002; /* Ensure the links are above other elements */
+		z-index: 1002;
 	}
 
 	.topnavmobile a.icon {
@@ -226,7 +226,7 @@ text-decoration: none;
 		align-items: center;
 		z-index: 1001;
 	}
-
+	/*Hamburger menu animation */
 	.hamburger.open .bar:nth-child(2) {
 		opacity: 0;
 	}
@@ -276,8 +276,8 @@ text-decoration: none;
 	}
 
 	.socials-footer {
-		justify-content: center; /* Center social icons */
-		gap: 10px; /* Add gap between icons */
+		justify-content: center;
+		gap: 10px;
 		margin-bottom: 20px;
 	}
 
