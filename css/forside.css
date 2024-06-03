@@ -317,9 +317,9 @@
 @media only screen and (max-width: 599px) {
 	.hero-section {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		justify-content: center;
-		padding: 2% 3%;
+		padding: 50px 3%;
 	}
 
 	.hero-text-button img {
@@ -342,6 +342,7 @@
 		font-weight: 400;
 		line-height: 135%; /* 1.35rem */
 		letter-spacing: 0.01rem;
+		width: 350px;
 	}
 
 	.hero-text-button {
@@ -355,7 +356,7 @@
 		color: #101010;
 		text-align: center;
 		font-family: Inter;
-		font-size: 40px;
+		font-size: 2.5rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 108%; /* 43.2px */
@@ -375,12 +376,14 @@
 		position: relative;
 		height: 30vh;
 		margin-bottom: 20px;
+		display: none;
 	}
 
 	.parallax-video {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		display: none;
 	}
 
 	.text-button-products h2 {
@@ -471,15 +474,14 @@
 
 	.text-container p {
 		color: #101010;
-		text-align: center;
+		text-align: left;
 		font-family: "DM Sans";
 		font-size: 0.9rem;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 140%; /* 22.4px */
 		letter-spacing: -0.32px;
-		padding: 1% 6%;
-		max-width: 300px;
+		max-width: 320px;
 	}
 
 	.text-container h2 {

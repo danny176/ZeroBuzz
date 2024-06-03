@@ -19,7 +19,7 @@
 		margin: 0 auto;
 	}
 
-	.hero h1 {
+	.hero h2 {
 		color: #fff;
 		text-align: center;
 		font-family: "Inter";
@@ -131,7 +131,7 @@
 		width: 48.6875rem;
 	}
 
-	.vision-message h1 {
+	.vision-message h2 {
 		color: #fff;
 		text-align: center;
 		font-family: "Inter";
@@ -177,7 +177,7 @@
 		margin: 0 auto;
 	}
 
-	.hero h1 {
+	.hero h2 {
 		color: #fff;
 		text-align: center;
 		font-family: "Inter";
@@ -301,7 +301,7 @@
 		padding-top: 8%;
 	}
 
-	.vision-message h1 {
+	.vision-message h2 {
 		color: #fff;
 		text-align: center;
 		font-family: Inter;
@@ -336,7 +336,7 @@
 		margin: 0 auto;
 	}
 
-	.hero h1 {
+	.hero h2 {
 		color: #fff;
 		text-align: center;
 		font-family: "Inter";
@@ -351,20 +351,20 @@
 	.text-container h2 {
 		color: #101010;
 		font-family: "Inter";
-		text-align: center;
+		text-align: left;
 		font-size: 3rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 108.425%; /* 3.25275rem */
 		letter-spacing: -0.06rem;
-		width: 22.3125rem;
+		width: 20rem;
 		margin: auto;
 	}
 
 	.text-container p {
 		color: #101010;
 		font-family: "DM Sans";
-		text-align: center;
+		text-align: left;
 		font-size: 0.9rem;
 		font-style: normal;
 		font-weight: 400;
@@ -447,7 +447,7 @@
 		width: 20.6875rem;
 	}
 
-	.vision-message h1 {
+	.vision-message h2 {
 		color: #fff;
 		text-align: center;
 		font-family: "Inter";
