@@ -12,6 +12,16 @@ body {
 	background-color: #fbfaf6;
 }
 
+@font-face {
+	font-family: "PP Neue Montreal";
+
+	src: url("/fonts/PPNeueMontreal-Medium.otf") format("opentype");
+
+	font-weight: medium;
+
+	font-style: normal;
+}
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -60,12 +70,11 @@ nav {
 
 .right-links {
 	color: #000;
-	font-family: "Work Sans";
+	font-family: "PP Neue Montreal";
 	font-size: 1.1rem;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: medium;
 	line-height: 107.292%;
-	letter-spacing: -0.01rem;
 	text-decoration: none;
 	display: flex;
 	gap: 25px;
@@ -210,8 +219,8 @@ nav {
 		color: #101010;
 		text-decoration: none;
 		font-size: 1.1rem;
-		font-family: "Work Sans";
-		font-style: normal;
+		font-family: "PP Neue Montreal";
+		font-style: medium;
 		font-weight: 500;
 		line-height: normal;
 		z-index: 1002;

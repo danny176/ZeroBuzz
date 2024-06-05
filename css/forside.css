@@ -68,7 +68,7 @@
 		font-family: "Inter";
 		font-size: 4.375rem;
 		font-style: normal;
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 108%;
 		letter-spacing: -0.2rem;
 		animation: slideInFromLeft 1s ease-out forwards;
@@ -226,7 +226,7 @@
 	}
 
 	.text-container p {
-		width: 19.3125rem;
+		width: 21rem;
 		color: #101010;
 		font-family: "DM Sans";
 		font-size: 1rem;
@@ -643,7 +643,7 @@
 
 	.product-column img {
 		display: block;
-		width: 100%;
+		width: 80%;
 		height: auto;
 		max-width: 400px;
 	}
@@ -678,7 +678,7 @@
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
-		width: 75%;
+		width: 90%;
 		margin: auto;
 	}
 
